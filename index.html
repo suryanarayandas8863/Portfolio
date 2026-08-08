@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arjun Mishra — Character Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="portfolio.css">
+  
+</head>
+<body>
+
+<div class="bg-layer">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+</div>
+<div class="grain"></div>
+
+<nav>
+  <div class="wrap">
+    <div class="nav-left">
+      <div class="nav-mark">&lt;AM Surya Narayan Das&gt;</div>
+      <div class="nav-xp">XP <span class="val" id="xpVal">0</span></div>
+    </div>
+    <div class="nav-links">
+      <a href="#stats">Stats</a>
+      <a href="#quests">Quests</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#guild">Guild</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+  <header class="hero">
+    <div class="sheet-card" id="sheetCard">
+      <div class="spotlight" id="spotlight"></div>
+      <div class="sheet-top">
+        <div>
+          <span class="eyebrow">Character Sheet</span>
+          <h1 class="name">Surya Narayan Das</h1>
+          <div class="role-cycle" id="roleCycle">Frontend Developer</div>
+          <div class="class-line">Class: Diploma in Computer Science &nbsp;·&nbsp; Alignment: Frontend-leaning Full Stack</div>
+          <div class="status-pill"><span class="dot"></span> Actively seeking first quest (job)</div>
+        </div>
+        <div class="level-ring-wrap">
+          <svg viewBox="0 0 116 116">
+            <defs>
+              <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#8b5cf6"/>
+                <stop offset="100%" stop-color="#c4f82a"/>
+              </linearGradient>
+            </defs>
+            <circle class="ring-bg" cx="58" cy="58" r="50"></circle>
+            <circle class="ring-fg" id="ringFg" cx="58" cy="58" r="50"></circle>
+          </svg>
+          <div class="level-badge">
+            <span class="num" id="levelNum">LV 1</span>
+            <span class="lbl">GRAD</span>
+          </div>
+          <div class="avatar-circle" id="avatarCircle">
+            <img id="avatarImg" src="photo.jpg" alt="Arjun Mishra" onerror="this.style.display='none'; document.getElementById('avatarInitials').style.display='flex';">
+            <span class="avatar-initials" id="avatarInitials" style="display:none;">AM</span>
+          </div>
+        </div>
+      </div>
+      <p class="tagline">I build things that work, then make them work well. Three years of diploma coursework, a handful of self-shipped projects, and <strong>zero fear of an empty terminal.</strong> Looking for a team that'll let me level up fast.</p>
+      <div class="quick-links">
+        <a class="btn btn-primary" href="#quests">View Quest Log</a>
+        <a class="btn btn-ghost" href="#" download>Download Resume ↓</a>
+        <a class="btn btn-ghost" href="#contact">Send a Raven</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="stats" class="reveal">
+    <div class="section-head">
+      <span class="section-tag">Attributes</span>
+      <h2>Skill Points</h2>
+      <p class="section-sub">Tap a stat for the honest version — where I've actually used it, not just studied it.</p>
+    </div>
+    <div id="stat-list">
+      <div class="stat-row" data-pct="82">
+        <span class="stat-label">HTML / CSS</span>
+        <div class="stat-track"><div class="stat-fill"></div></div>
+        <span class="stat-pct">82%</span>
+      </div>
+      <div class="stat-row" data-pct="70">
+        <span class="stat-label">JavaScript</span>
+        <div class="stat-track"><div class="stat-fill"></div></div>
+        <span class="stat-pct">70%</span>
+      </div>
+      <div class="stat-row" data-pct="60">
+        <span class="stat-label">Python</span>
+        <div class="stat-track"><div class="stat-fill"></div></div>
+        <span class="stat-pct">60%</span>
+      </div>
+      <div class="stat-row" data-pct="55">
+        <span class="stat-label">SQL</span>
+        <div class="stat-track"><div class="stat-fill"></div></div>
+        <span class="stat-pct">55%</span>
+      </div>
+      <div class="stat-row" data-pct="65">
+        <span class="stat-label">Git / GitHub</span>
+        <div class="stat-track"><div class="stat-fill"></div></div>
+        <span class="stat-pct">65%</span>
+      </div>
+       <div class="stat-row" data-pct="65">
+        <span class="stat-label">Git / GitHub</span>
+        <div class="stat-track"><div class="stat-fill"></div></div>
+        <span class="stat-pct">65%</span>
+      </div>
+      </div>
+       <div class="stat-row" data-pct="70">
+        <span class="stat-label">Linux</span>
+        <div class="stat-track"><div class="stat-fill"></div></div>
+        <span class="stat-pct">70%</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="quests" class="reveal">
+    <div class="section-head">
+      <span class="section-tag">Adventure Log</span>
+      <h2>Quest Log</h2>
+      <p class="section-sub">Projects, framed honestly: the problem, the fight, the loot.</p>
+    </div>
+
+    <div class="quest">
+      <div class="quest-head">
+        <div class="quest-title-wrap">
+          <span class="quest-title">Campus Event Tracker</span>
+          <span class="badge badge-done">Completed</span>
+          <span class="badge badge-diff">Medium</span>
+        </div>
+        <span class="chevron">▾</span>
+      </div>
+      <div class="quest-body">
+        <div class="quest-body-inner">
+          <p><strong>The problem:</strong> our diploma department posted events across three WhatsApp groups and one noticeboard. Nobody knew what was happening.</p>
+          <p><strong>The build:</strong> a small web app where student coordinators post events and everyone else sees a single calendar. Built the frontend and wired it to a basic backend.</p>
+          <div class="tech-tags"><span class="tag">HTML/CSS</span><span class="tag">JavaScript</span><span class="tag">Firebase</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="quest">
+      <div class="quest-head">
+        <div class="quest-title-wrap">
+          <span class="quest-title">Expense Splitter CLI</span>
+          <span class="badge badge-done">Completed</span>
+          <span class="badge badge-diff">Easy</span>
+        </div>
+        <span class="chevron">▾</span>
+      </div>
+      <div class="quest-body">
+        <div class="quest-body-inner">
+          <p><strong>The problem:</strong> splitting hostel mess bills between five people by hand, every month, forever.</p>
+          <p><strong>The build:</strong> a Python command-line tool that takes who-paid-what and spits out the minimum number of transactions to settle up.</p>
+          <div class="tech-tags"><span class="tag">Python</span><span class="tag">Algorithms</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="quest">
+      <div class="quest-head">
+        <div class="quest-title-wrap">
+          <span class="quest-title">Student Grade Portal (Mini)</span>
+          <span class="badge badge-done">Completed</span>
+          <span class="badge badge-diff">Hard</span>
+        </div>
+        <span class="chevron">▾</span>
+      </div>
+      <div class="quest-body">
+        <div class="quest-body-inner">
+          <p><strong>The problem:</strong> final-year practical project — needed a real database-backed app, not another to-do list.</p>
+          <p><strong>The build:</strong> teachers enter marks, students log in to view their own results. First real use of SQL joins under pressure, two days before submission.</p>
+          <div class="tech-tags"><span class="tag">HTML/CSS</span><span class="tag">SQL</span><span class="tag">Python</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="achievements" class="reveal">
+    <div class="section-head">
+      <span class="section-tag">Trophy Case</span>
+      <h2>Achievements</h2>
+    </div>
+    <div class="ach-grid">
+      <div class="ach-card"><div class="ach-icon">🏆</div><div class="ach-title">College Hackathon</div><div class="ach-sub">Runner-up, 2025</div></div>
+      <div class="ach-card"><div class="ach-icon">📜</div><div class="ach-title">Python Certification</div><div class="ach-sub">Self-paced, 2024</div></div>
+      <div class="ach-card"><div class="ach-icon">⚡</div><div class="ach-title">30-Day Coding Streak</div><div class="ach-sub">Personal challenge</div></div>
+      <div class="ach-card"><div class="ach-icon">🛠️</div><div class="ach-title">Open Source PR</div><div class="ach-sub">First merged contribution</div></div>
+    </div>
+  </section>
+
+  <section id="guild" class="reveal">
+    <div class="section-head">
+      <span class="section-tag">Guild Hall</span>
+      <h2>Education</h2>
+    </div>
+    <div class="guild-card">
+      <div>
+        <div class="guild-name">Diploma in Computer Science &amp; Engineering</div>
+        <div class="guild-meta">Government Polytechnic · 2023 – 2026</div>
+      </div>
+      <div>
+        <div class="guild-score">8.4</div>
+        <div class="guild-score-lbl">CGPA</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="reveal">
+    <div class="contact-card">
+      <span class="section-tag" style="display:block; justify-content:center;">Send a Raven</span>
+      <h2>Let's talk about that first quest.</h2>
+      <p class="section-sub" style="margin:0 auto;">Open to internships and entry-level roles in web development. I reply fast — usually faster than a raven.</p>
+      <div class="contact-links">
+        <a class="btn btn-primary" href="mailto:arjun.mishra@example.com">Email Me</a>
+        <a class="btn btn-ghost" href="#">GitHub</a>
+        <a class="btn btn-ghost" href="#">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>Built one commit at a time · Level 1, still grinding</footer>
+</div>
+
+<div class="toast" id="toast">🎉 You've reached the end of my quest log!</div>
+
+<script>
+  // Cursor spotlight on hero card
+  const sheetCard = document.getElementById('sheetCard');
+  sheetCard.addEventListener('mousemove', (e) => {
+    const rect = sheetCard.getBoundingClientRect();
+    sheetCard.style.setProperty('--mx', (e.clientX - rect.left) + 'px');
+    sheetCard.style.setProperty('--my', (e.clientY - rect.top) + 'px');
+  });
+
+  // Rotating role text
+  const roles = ["Frontend Developer", "Problem Solver", "Quest Completer", "Fast Learner", "Future Teammate"];
+  let roleIdx = 0;
+  const roleEl = document.getElementById('roleCycle');
+  function cycleRole(){
+    roleEl.style.opacity = 0;
+    setTimeout(() => {
+      roleIdx = (roleIdx + 1) % roles.length;
+      roleEl.textContent = roles[roleIdx];
+      roleEl.style.opacity = 1;
+    }, 300);
+  }
+  roleEl.style.transition = 'opacity .3s';
+  setInterval(cycleRole, 2400);
+
+  // Level ring animated fill + counter
+  window.addEventListener('load', () => {
+    const ringFg = document.getElementById('ringFg');
+    const circumference = 314;
+    const targetPct = 72;
+    setTimeout(() => {
+      ringFg.style.strokeDashoffset = circumference - (circumference * targetPct / 100);
+    }, 300);
+  });
+
+  // XP counter in nav, increases as sections are revealed
+  let xp = 0;
+  const xpVal = document.getElementById('xpVal');
+  function addXP(amount){
+    const target = xp + amount;
+    const step = () => {
+      if(xp < target){
+        xp += 2;
+        if(xp > target) xp = target;
+        xpVal.textContent = xp;
+        requestAnimationFrame(step);
+      }
+    };
+    step();
+  }
+  // Animate stat bars on scroll into view
+  const statRows = document.querySelectorAll('.stat-row');
+  const statObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        const row = entry.target;
+        const pct = row.dataset.pct;
+        row.querySelector('.stat-fill').style.width = pct + '%';
+        statObserver.unobserve(row);
+      }
+    });
+  }, {threshold:0.4});
+  statRows.forEach(row => statObserver.observe(row));
+
+  // Click a stat to reveal a note (playful honest commentary)
+  const notes = {
+    "HTML / CSS":"Comfortable enough to build layouts without checking docs every five minutes.",
+    "JavaScript":"Confident with DOM, fetch, and events. Still leveling up on async patterns.",
+    "Python":"Used it for scripts, CLI tools, and one very stressful final project.",
+    "SQL":"Can write joins and subqueries. Learned most of it two days before a deadline.",
+    "Git / GitHub":"Know my way around branches and PRs. Still afraid of force-push."
+  };
+  statRows.forEach(row => {
+    row.addEventListener('click', () => {
+      let note = row.querySelector('.stat-note');
+      if(!note){
+        note = document.createElement('div');
+        note.className = 'stat-note';
+        note.textContent = notes[row.querySelector('.stat-label').textContent] || '';
+        row.appendChild(note);
+      }
+      row.classList.toggle('open');
+    });
+  });
+
+  // Quest expand/collapse
+  document.querySelectorAll('.quest-head').forEach(head => {
+    head.addEventListener('click', () => {
+      head.parentElement.classList.toggle('open');
+    });
+  });
+
+  // Section reveal on scroll + XP gain per section
+  const revealSections = document.querySelectorAll('.reveal');
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('in');
+        addXP(25);
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, {threshold:0.2});
+  revealSections.forEach(sec => revealObserver.observe(sec));
+
+  // Toast when contact section is reached
+  const toast = document.getElementById('toast');
+  const contactSection = document.getElementById('contact');
+  let toastShown = false;
+  const toastObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting && !toastShown){
+        toast.classList.add('show');
+        toastShown = true;
+        setTimeout(() => toast.classList.remove('show'), 3200);
+      }
+    });
+  }, {threshold:0.5});
+  toastObserver.observe(contactSection);
+</script>
+
+</body>
+</html>
